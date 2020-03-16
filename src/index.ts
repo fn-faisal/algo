@@ -1,8 +1,9 @@
-export class C {
-    private x = 10;
-    getX = () => this.x;
-    setX = (newVal: number) => { this.x = newVal; }
-}
+// import {SortFactory, SortAlgo} from './sort';
 
-export let x = new C();
-export let y = { ...{ some: "value" } };
+// const arr = [9, 7, 5, 11, 12, 2, 14, 3, 10, 6];
+
+// const sorted = SortFactory.make<number>(SortAlgo.QUICK_SORT)?.sort(arr, 0, arr.length - 1);
+
+// console.log(sorted)
+
+export * from './sort';
