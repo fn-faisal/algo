@@ -77,3 +77,22 @@ const sorted = quickSort.sort(arr);
 // log the output.
 console.log(sorted);
 ```
+
+### 1.4 Insertion Sort.
+
+```ts
+// import sort algo factory.
+import {SortFactory, SortAlgo, Sort} from 'ts-algorithm-utils';
+
+// set an unsorted array.
+const arr = [9, 7, 5, 11, 12, 2, 14, 3, 10, 6];
+
+// get the quick sort object from 
+const quickSort: Sort<number> = SortFactory.make(SortAlgo.INSERTION_SORT);
+
+// sort the array.
+const sorted = quickSort.sort(arr);
+
+// log the output.
+console.log(sorted);
+```

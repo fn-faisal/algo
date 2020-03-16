@@ -3,12 +3,14 @@ import { QuickSort } from "./quicksort";
 import { MergeSort } from "./mergesort";
 import { BubbleSort } from "./bubblesort";
 import { SelectionSort } from "./selectionsort";
+import { InsertionSort } from "./insertionsort";
 
 export enum SortAlgo {
     QUICK_SORT,
     MERGE_SORT,
     BUBBLE_SORT,
     SELECTION_SORT,
+    INSERTION_SORT
 };
 
 export class SortFactory {
@@ -22,6 +24,8 @@ export class SortFactory {
                 return new BubbleSort<T>();
             case SortAlgo.SELECTION_SORT:
                 return new SelectionSort<T>();
+            case SortAlgo.INSERTION_SORT:
+                return new InsertionSort<T>();
             default:
                 return new QuickSort<T>();
         }
