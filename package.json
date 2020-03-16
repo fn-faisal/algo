@@ -1,7 +1,8 @@
 {
-  "name": "babel-typescript-sample",
-  "version": "0.7.2",
-  "license": "MIT",
+  "name": "algorithms",
+  "version": "0.0.1",
+  "description": "A ts algorithms lib",
+  "main": "index.js",
   "scripts": {
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
@@ -13,6 +14,7 @@
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
     "typescript": "^3.7.5"
