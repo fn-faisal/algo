@@ -106,7 +106,7 @@ const sorted = sortAlgo.sort(arr);
 console.log(sorted);
 ```
 
-### 1.5 Radix Sort.
+### 1.6 Radix Sort.
 
 ```ts
 // import sort algo factory.
