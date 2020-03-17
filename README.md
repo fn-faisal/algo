@@ -87,7 +87,7 @@ const sorted = sortAlgo.sort(arr);
 console.log(sorted);
 ```
 
-### 1.4 Insertion Sort.
+### 1.5 Insertion Sort.
 
 ```ts
 // import sort algo factory.
