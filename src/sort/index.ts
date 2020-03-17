@@ -4,13 +4,15 @@ import { MergeSort } from "./mergesort";
 import { BubbleSort } from "./bubblesort";
 import { SelectionSort } from "./selectionsort";
 import { InsertionSort } from "./insertionsort";
+import { RadixSort } from "./radixsort";
 
 export enum SortAlgo {
     QUICK_SORT,
     MERGE_SORT,
     BUBBLE_SORT,
     SELECTION_SORT,
-    INSERTION_SORT
+    INSERTION_SORT,
+    RADIX_SORT
 };
 
 export class SortFactory {
@@ -26,6 +28,8 @@ export class SortFactory {
                 return new SelectionSort<T>();
             case SortAlgo.INSERTION_SORT:
                 return new InsertionSort<T>();
+            case SortAlgo.RADIX_SORT:
+                return new RadixSort<T>();
             default:
                 return new QuickSort<T>();
         }
